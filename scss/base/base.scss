@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins" as m;
 
 *,
 *::after,
@@ -12,6 +13,7 @@ html {
 	font-size: 82.5%;
 	font-family: var(--font);
 	color: var(--color-font);
+	scroll-behavior: smooth;
 }
 
 body {
@@ -19,36 +21,39 @@ body {
 }
 
 section {
-	background-color: var(--color-bg);
 	width: 100%;
 	height: 100vh;
 	padding: 7rem 0;
 	position: relative;
+	background-color: var(--color-bg);
 }
 
-section:not(:first-child) {
-	padding-top: 0;
-}
+// section:not(:first-child) {
+// 	padding-top: 0rem;
+// }
 
 .container {
 	background-color: var(--color-main);
 	height: 100%;
 	min-width: 100%;
+	margin: auto;
 }
 
 .flexcontainer {
 	height: 100%;
-	width: 1600px;
+	width: 100%;
 	margin: auto;
-	padding: 5rem;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
 
+	@include m.respond(big) {
+		width: 1600px;
+	}
+}
 // TRIANGLE OBJECT
-// .flexcontainer::after {
+// #landing::after {
 // 	content: "";
 // 	background-color: var(--color-main);
 // 	width: 200px;

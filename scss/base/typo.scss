@@ -1,0 +1,23 @@
+@use "../abstracts/variables";
+
+h1 {
+	font-size: 5rem;
+}
+
+h3 {
+	color: var(--color-font);
+	font-size: 3.6rem;
+	margin-bottom: 2.4rem;
+}
+
+h4 {
+	color: var(--color-font);
+	font-size: 1.6rem;
+	margin-bottom: .4rem;
+}
+
+.paragraph {
+	font-size: var(--fontsize-normal);
+	line-height: var(--font-lineheigth);
+	margin-bottom: 1.6rem;
+}

@@ -11,32 +11,69 @@
 		/>
 		<link rel="icon" type="image/x-icon" href="src/icon.png" />
 		<link rel="stylesheet" href="scss/main.scss" />
+		<script
+			src="https://kit.fontawesome.com/7c5708611e.js"
+			crossorigin="anonymous"
+		></script>
 		<script defer type="module" src="js/script.js"></script>
 		<title>Portfolio</title>
 	</head>
 	<body>
 		<header class="navigation">
 			<div class="navcontainer">
-				<img class="navigation__img" src="src/logo.png" />
-				<nav>
+				<a class="navigation__img" href="#"><img src="src/logo.png" /></a>
+				<nav class="navigation__nav">
 					<ul class="navigation__list">
 						<li class="navigation__list--item active">
-							<a class="navigation__list--link active-link" href="#projects">Projekte</a>
+							<a class="navigation__list--link active-link" href="#projects"
+								>Projekte</a
+							>
 						</li>
 						<li class="navigation__list--item">
-							<a class="navigation__list--link" href="#projects">About</a>
+							<a class="navigation__list--link" href="#about">About</a>
 						</li>
 						<li class="navigation__list--item">
-							<a class="navigation__list--link" href="#projects">Kontakt</a>
+							<a class="navigation__list--link" href="#contact">Kontakt</a>
+						</li>
+						<li>
+							<a
+								target="_blank"
+								class="navigation__list--social"
+								href="https://www.linkedin.com/in/janrei1106/"
+								><i class="fa-2xl fa-brands fa-linkedin"></i
+							></a>
+						</li>
+						<li class="navigation__list--icon">
+							<a
+								target="_blank"
+								class="navigation__list--social"
+								href="https://github.com/Lone1106"
+								><i class="fa-2xl fa-brands fa-square-github"></i
+							></a>
 						</li>
 					</ul>
 				</nav>
+				<p class="navigation__mobile">Icon</p>
 			</div>
 		</header>
 		<main>
 			<section id="landing">
 				<div class="container">
-					<div class="flexcontainer"></div>
+					<div class="flexcontainer">
+						<figure class="landing__left">
+							<p class="landing__left--emote">👋</p>
+							<h1>Jan Reichherzer</h1>
+							<p class="landing__left--job">Mediengestalter Digital & Print</p>
+							<div class="landing__left--buttons">
+								<a href="#projects">Projekte</a>
+								<a href="#contact">Kontakt</a>
+							</div>
+						</figure>
+
+						<figure class="landing__right">
+							<img class="landing__right--img" src="src/jan-sw.webp" lazy>
+						</figure>
+					</div>
 				</div>
 			</section>
 
@@ -48,15 +85,56 @@
 
 			<section id="about">
 				<div class="container">
-					<div class="flexcontainer"></div>
+					<div class="flexcontainer">
+						<article>
+							<h3>About</h3>
+							<p class="paragraph">
+								Mein Name ist Jan. Von September 2017 bis März 2021 durchlief
+								ich eine dreijährige Ausbildung als Mediengestalter Digital &
+								Print im Bereich der Druckvorstufe. Seit März 2021 bin ich in
+								auch diesem Bereich tätig. Meine Interessen erstrecken sich
+								jedoch über den Bereich Print, weshalb ich mich ebenso mit dem
+								digitalen Bereich beschäftige. Ebenso interessiere ich mich für
+								Fremdsprachen und Kulturen, aktuell beschäftige ich mich mit der
+								japanischen Kultur und Sprache.
+							</p>
+
+							<h4>Fähigkeiten</h4>
+							<p class="paragraph">
+								HTML, CSS, SASS, Javascript, React, Wordpress, Packedge, Adobe
+								Illustrator, Adobe Photoshop, Prepress, CTP, Prinect
+							</p>
+
+							<h4>Sprachen</h4>
+							<p class="paragraph">
+								Deutsch (N), Englisch (C1), Japanisch (N3)
+							</p>
+
+							<p class="paragraph">
+								Habe ich dein Intersse geweckt?
+								<a class="about__link" href="#contact">Kontakiere</a> mich doch!
+							</p>
+						</article>
+					</div>
 				</div>
 			</section>
 
 			<section id="contact">
 				<div class="container">
-					<div class="flexcontainer"></div>
+					<div class="flexcontainer">
+						<figure class="contact__left">left</figure>
+
+						<figure class="contact__right">right</figure>
+					</div>
 				</div>
 			</section>
 		</main>
+
+		<footer class="footer">
+			<p class="footer__text">
+				&copy; <span>2022</span> Jan Reichherzer <br />
+				All rights reserved
+			</p>
+		</footer>
 	</body>
 </html>

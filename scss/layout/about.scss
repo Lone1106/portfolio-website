@@ -1,0 +1,14 @@
+@use "../abstracts/variables";
+
+.about {
+	&__link:link,
+	&__link:visited {
+		color: var(--color-accent);
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+
+	&__link:hover {
+		color: var(--color-hover);
+	}
+}

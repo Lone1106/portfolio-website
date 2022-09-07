@@ -1,0 +1,16 @@
+@use "../abstracts/variables";
+
+.footer {
+	background-color: var(--color-bg);
+	height: 7rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	&__text {
+		font-size: var(--fontsize-normal);
+		color: var(--color-less);
+	}
+}
