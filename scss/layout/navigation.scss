@@ -1,0 +1,84 @@
+@use "../abstracts/variables";
+
+.navigation {
+	min-width: 100%;
+	background-color: var(--color-bg);
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-size: var(--fontsize-normal);
+	z-index: 9999;
+
+	&__img {
+		height: 75%;
+		width: auto;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		text-align: center;
+
+		&--item {
+			width: 100px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: var(--border-radius);
+		}
+
+		&--item::before {
+			content: "";
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: var(--color-main);
+			border-radius: var(--border-radius);
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: all 0.25s;
+			z-index: 9;
+		}
+
+		&--item:hover::before {
+			transform: scaleX(1);
+		}
+
+		&--item:hover &--link {
+			color: var(--color-font);
+		}
+
+		&--link:link,
+		&--link:visited {
+			text-decoration: none;
+			color: var(--color-main);
+			z-index: 9998;
+		}
+	}
+}
+
+.navcontainer {
+	width: 1600px;
+	height: 7rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// NAV ITEM ACTIVE STATE
+.active {
+	background-color: var(--color-main);
+}
+
+.active-link:link,
+.active-link:visited {
+	color: var(--color-font);
+}
