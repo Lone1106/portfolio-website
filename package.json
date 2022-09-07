@@ -1,0 +1,18 @@
+{
+  "name": "minimal-portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website Project",
+  "browserList": "> 0.5%, last 2 versions, not dead",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Lone1106",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "latest",
+    "parcel": "latest"
+  }
+}
