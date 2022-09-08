@@ -1,7 +1,65 @@
-.button-accent-bg {}
+@use "../abstracts/variables";
 
-.button-accent-sm {}
+.button-bg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	height: 4.5rem;
+	width: 20rem;
+	font-size: 2.4rem;
+	transition: all 0.3s;
+	letter-spacing: 1px;
+}
 
-.button-light-bg {}
+.button-accent-bg:link,
+.button-accent-bg:visited {
+	border: 3px solid transparent;
+	border-radius: var(--border-radius);
+	background-color: var(--color-accent);
+	color: var(--color-font);
+	font-weight: 700;
 
-.button-light-sm {}
+}
+
+.button-accent-bg:hover {
+	background-color: var(--color-main);
+	color: var(--color-accent);
+	border: 3px solid var(--color-accent);
+}
+
+.button-accent-bg:active {
+	background-color: var(--color-active);
+	border: 3px solid transparent;
+	color: var(--color-font);
+}
+
+.button-light-bg:link,
+.button-light-bg:visited {
+	border: 3px solid var(--color-less);
+	border-radius: var(--border-radius);
+	background-color: var(--color-main);
+	color: var(--color-less);
+	font-weight: 400;
+
+}
+
+.button-light-bg:hover {
+	background-color: var(--color-less);
+	color: var(--color-main);
+	border: 3px solid var(--color-less);
+}
+
+.button-light-bg:active {
+	background-color: var(--color-bg);
+	border: 3px solid transparent;
+	color: var(--color-main);
+}
+
+.button-accent-sm:link,
+.button-accent-sm:visited {
+}
+
+.button-light-sm:link,
+.button-light-sm:visited {
+}

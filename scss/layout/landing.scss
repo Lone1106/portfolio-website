@@ -10,11 +10,28 @@
 		justify-content: center;
 		align-items: flex-start;
 
-		&--emote {}
+		@media (hover: none) {
+			align-items: center;
+		}
 
-		&--jobb {}
+		&--emote {
+			font-size: 3.6rem;
+			margin-bottom: -1rem;
+		}
 
-		&--buttons {}
+		&--job {
+			font-size: 2rem;
+			font-weight: 300;
+			margin-top: -0.6rem;
+		}
+
+		&--buttons {
+			width: 100%;
+			margin-top: 2.4rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 	}
 
 	&__right {
@@ -23,6 +40,10 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
+
+		@media (hover: none) {
+			display: none;
+		}
 
 		&--img {
 			height: 100%;

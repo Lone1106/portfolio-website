@@ -5,12 +5,117 @@
 	&__left {
 		width: 100%;
 		height: 100%;
-		background-color: red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--wrapper {
+			width: 70%;
+		}
+
+		&--form {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		&--inp {
+			width: 100%;
+			padding: 1rem 1rem;
+			outline: none;
+			border: 3px solid var(--color-main);
+			margin-bottom: 1.6rem;
+			border-radius: var(--border-radius);
+			font-family: inherit;
+			font-size: var(--fontsize-normal);
+
+			&:focus {
+				border: 3px solid var(--color-accent);
+			}
+
+			&:focus:invalid {
+				border: 3px solid var(--color-error);
+			}
+		}
+
+		&--area {
+			width: 100%;
+			height: 400px;
+			padding: 1rem 1rem;
+			margin-bottom: 1.6rem;
+			outline: none;
+			border: 3px solid var(--color-main);
+			border-radius: var(--border-radius);
+			font-family: inherit;
+			font-size: var(--fontsize-normal);
+
+			&:focus {
+				border: 3px solid var(--color-accent);
+			}
+
+			&:focus:invalid {
+				border: 3px solid var(--color-error);
+			}
+		}
+
+		&--btn {
+			width: 100%;
+			padding: 1rem 2rem;
+			border: 3px solid var(--color-main);;
+			border-radius: var(--border-radius);
+			cursor: pointer;
+			background-color: var(--color-accent);
+			color: var(--color-font);
+			font-size: 1.8rem;
+			font-weight: 700;
+			letter-spacing: 1px;
+			transition: all 0.3s;
+
+			&:disabled {
+				background-color: var(--color-less);
+			}
+
+			&:hover {
+				background-color: var(--color-main);
+				color: var(--color-accent);
+				border: 3px solid var(--color-accent);
+			}
+
+			&:active {
+				background-color: var(--color-active);
+				border: 3px solid var(--color-main);
+				color: var(--color-font);
+			}
+		}
 	}
 
 	&__right {
 		width: 100%;
 		height: 100%;
-		background-color: green;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--link:link,
+		&--link:visited {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 1.6rem;
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: var(--color-font);
+			margin-bottom: 3.2rem;
+			transition: color 0.3s;
+		}
+
+		&--link:hover {
+			color: var(--color-accent);
+		}
+
+		&--link:active {
+			color: var(--color-active);
+		}
 	}
 }

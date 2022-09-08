@@ -9,6 +9,11 @@
 	box-sizing: border-box;
 }
 
+::selection {
+	color: var(--color-font);
+	background-color: var(--color-accent);
+}
+
 html {
 	font-size: 82.5%;
 	font-family: var(--font);
@@ -27,10 +32,6 @@ section {
 	position: relative;
 	background-color: var(--color-bg);
 }
-
-// section:not(:first-child) {
-// 	padding-top: 0rem;
-// }
 
 .container {
 	background-color: var(--color-main);

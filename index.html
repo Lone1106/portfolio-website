@@ -16,7 +16,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script defer type="module" src="js/script.js"></script>
-		<title>Portfolio</title>
+		<title>Jan Reichherzer - Portfolio</title>
 	</head>
 	<body>
 		<header class="navigation">
@@ -53,7 +53,9 @@
 						</li>
 					</ul>
 				</nav>
-				<p class="navigation__mobile">Icon</p>
+				<p class="navigation__mobile">
+					<i class="fa-solid fa-bars fa-2xl"></i>
+				</p>
 			</div>
 		</header>
 		<main>
@@ -61,17 +63,25 @@
 				<div class="container">
 					<div class="flexcontainer">
 						<figure class="landing__left">
-							<p class="landing__left--emote">👋</p>
-							<h1>Jan Reichherzer</h1>
-							<p class="landing__left--job">Mediengestalter Digital & Print</p>
-							<div class="landing__left--buttons">
-								<a href="#projects">Projekte</a>
-								<a href="#contact">Kontakt</a>
+							<div>
+								<p class="landing__left--emote">👋</p>
+								<h1>Jan Reichherzer</h1>
+								<p class="landing__left--job">
+									Mediengestalter Digital & Print
+								</p>
+								<div class="landing__left--buttons">
+									<a href="#projects" class="button-bg button-light-bg"
+										>Projekte</a
+									>
+									<a href="#contact" class="button-bg button-accent-bg"
+										>Kontakt</a
+									>
+								</div>
 							</div>
 						</figure>
 
 						<figure class="landing__right">
-							<img class="landing__right--img" src="src/jan-sw.webp" lazy>
+							<img class="landing__right--img" src="src/jan-sw.webp" lazy />
 						</figure>
 					</div>
 				</div>
@@ -79,7 +89,9 @@
 
 			<section id="projects">
 				<div class="container">
-					<div class="flexcontainer"></div>
+					<div class="flexcontainer">
+						<h3>Projekte</h3>
+					</div>
 				</div>
 			</section>
 
@@ -122,9 +134,54 @@
 			<section id="contact">
 				<div class="container">
 					<div class="flexcontainer">
-						<figure class="contact__left">left</figure>
+						<figure class="contact__left">
 
-						<figure class="contact__right">right</figure>
+							<div class="contact__left--wrapper">
+								<h3>Kontakt</h3>
+								<form class="contact__left--form">
+									<input
+										class="contact__left--inp"
+										type="text"
+										placeholder="Name"
+										minLength="2"
+										required
+									/>
+									<input
+										class="contact__left--inp"
+										type="email"
+										placeholder="Email"
+										minLength="2"
+										required
+									/>
+									<textarea
+										class="contact__left--area"
+										placeholder="Nachricht"
+										minLength="2"
+										required
+									></textarea>
+									<button disabled class="contact__left--btn">Senden</button>
+								</form>
+							</div>
+						</figure>
+
+						<figure class="contact__right">
+							<div>
+								<a
+									target="_blank"
+									class="contact__right--link"
+									href="https://www.linkedin.com/in/janrei1106/"
+									><i class="fa-2xl fa-brands fa-linkedin"></i
+									>https://www.linkedin.com/in/janrei1106/</a
+								>
+								<a
+									target="_blank"
+									class="contact__right--link"
+									href="https://github.com/Lone1106"
+									><i class="fa-2xl fa-brands fa-square-github"></i
+									>https://github.com/Lone1106</a
+								>
+							</div>
+						</figure>
 					</div>
 				</div>
 			</section>
@@ -132,8 +189,8 @@
 
 		<footer class="footer">
 			<p class="footer__text">
-				&copy; <span>2022</span> Jan Reichherzer <br />
-				All rights reserved
+				&copy; <span>2022</span> Jan Reichherzer.<br />
+				All rights reserved.
 			</p>
 		</footer>
 	</body>
