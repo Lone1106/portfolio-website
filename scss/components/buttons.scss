@@ -34,7 +34,7 @@
 }
 
 .button-accent:hover {
-	background-color: var(--color-main);
+	background-color: transparent;
 	color: var(--color-accent);
 	border: 3px solid var(--color-accent);
 }
@@ -49,7 +49,7 @@
 .button-light:visited {
 	border: 3px solid var(--color-less);
 	border-radius: var(--border-radius);
-	background-color: var(--color-main);
+	background-color: transparent;
 	color: var(--color-less);
 	font-weight: 400;
 }
@@ -62,7 +62,7 @@
 
 .button-light:active {
 	background-color: var(--color-bg);
-	border: 3px solid transparent;
+	border: 3px solid var(--color-bg);
 	color: var(--color-main);
 }
 

@@ -24,10 +24,8 @@
 				<a class="navigation__img" href="#"><img src="src/logo.png" /></a>
 				<nav class="navigation__nav">
 					<ul class="navigation__list">
-						<li class="navigation__list--item active">
-							<a class="navigation__list--link active-link" href="#projects"
-								>Projekte</a
-							>
+						<li class="navigation__list--item">
+							<a class="navigation__list--link" href="#projects">Projekte</a>
 						</li>
 						<li class="navigation__list--item">
 							<a class="navigation__list--link" href="#about">About</a>
@@ -59,8 +57,8 @@
 			</div>
 		</header>
 		<main>
-			<section id="landing">
-				<div class="container">
+			<section id="landing" class="section-main">
+				<div class="container-main">
 					<div class="flexcontainer">
 						<figure class="landing__left">
 							<div>
@@ -83,143 +81,6 @@
 						<figure class="landing__right">
 							<img class="landing__right--img" src="src/jan-sw.webp" lazy />
 						</figure>
-					</div>
-				</div>
-			</section>
-
-			<section id="projects">
-				<div class="container">
-					<div class="flexcontainer">
-						<article>
-							<h3>Projekte</h3>
-							<div class="projects">
-								<figure class="projects__slides">
-									<input
-										class="projects__slides--radio"
-										type="radio"
-										id="r1"
-										name="r"
-										checked
-									/>
-									<input
-										class="projects__slides--radio"
-										type="radio"
-										id="r2"
-										name="r"
-									/>
-									<input
-										class="projects__slides--radio"
-										type="radio"
-										id="r3"
-										name="r"
-									/>
-									<figcaption class="projects__slides--slide s1">
-										<div class="projects__slides--slide--left">
-											<div>
-												<h4>Terminal Website</h4>
-												<p class="paragraph">
-													Portfoliowebsite im Style eines Terminals. Gebe
-													Befehle ein um Informationen über den Besitzer der
-													Seite herauszufinden. Funktioniert wie ein übliches
-													Terminal!
-												</p>
-												<p class="paragraph">
-													<b>Technologien:</b> HTML, CSS, Javascript
-												</p>
-
-												<div class="projects__buttons">
-													<a class="button button-sm button-light" href="#"
-														>Github</a
-													>
-													<a class="button button-sm button-accent" href="#"
-														>Vorschau</a
-													>
-												</div>
-											</div>
-										</div>
-
-										<div class="projects__slides--slide--right">
-											<img
-												src="src/Mockup1.webp"
-												lazy
-												alt="Preview of Project 1 on a Macbook"
-											/>
-										</div>
-									</figcaption>
-
-									<figcaption class="projects__slides--slide">
-										<div class="projects__slides--slide--left">
-											<div>
-												<h4>Flashcard Application</h4>
-												<p class="paragraph">
-													Eine Flashcard App zum üben von Vokabeln oder ähnlichem!
-												</p>
-												<p class="paragraph">
-													<b>Technologien:</b> HTML, CSS, React, nodeJS
-												</p>
-
-												<div class="projects__buttons">
-													<a class="button button-sm button-light" href="#"
-														>Github</a
-													>
-													<a class="button button-sm button-accent" href="#"
-														>Vorschau</a
-													>
-												</div>
-											</div>
-										</div>
-
-										<div class="projects__slides--slide--right">
-											<img
-												src="src/Mockup1.webp"
-												lazy
-												alt="Preview of Project 1 on a Macbook"
-											/>
-										</div>
-									</figcaption>
-
-									<figcaption class="projects__slides--slide">
-										<div class="projects__slides--slide--left">
-											<div>
-												<h4>Business Website</h4>
-												<p class="paragraph">
-													Eine moderner Webauftritt für ein up-to-date Fußpflegeunternehmen.
-												</p>
-												<p class="paragraph">
-													<b>Technologien:</b> Wordpress
-												</p>
-
-												<div class="projects__buttons">
-													<a class="button button-sm button-light" href="#"
-														>Github</a
-													>
-													<a class="button button-sm button-accent" href="#"
-														>Vorschau</a
-													>
-												</div>
-											</div>
-										</div>
-
-										<div class="projects__slides--slide--right">
-											<img
-												src="src/Mockup1.webp"
-												lazy
-												alt="Preview of Project 1 on a Macbook"
-											/>
-										</div>
-									</figcaption>
-								</figure>
-
-								<div class="projects__slides--nav">
-									<label
-										class="projects__slides--label label-active"
-										for="r1"
-									></label>
-									<label class="projects__slides--label" for="r2"></label>
-									<label class="projects__slides--label" for="r3"></label>
-								</div>
-							</div>
-						</article>
 					</div>
 				</div>
 			</section>
@@ -260,6 +121,145 @@
 				</div>
 			</section>
 
+			<section id="projects" class="section-test">
+				<div class="container-main">
+					<div class="flexcontainer">
+						<article>
+							<h3 class="projects__text">Projekte</h3>
+							<div class="projects">
+								<figure class="projects__slides">
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r1"
+										name="r"
+										checked
+									/>
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r2"
+										name="r"
+									/>
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r3"
+										name="r"
+									/>
+									<figcaption class="projects__slides--slide s1">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4 class="projects__text">Terminal Website</h4>
+												<p class="paragraph projects__text">
+													Portfoliowebsite im Style eines Terminals. Gebe
+													Befehle ein um Informationen über den Besitzer der
+													Seite herauszufinden. Funktioniert wie ein übliches
+													Terminal!
+												</p>
+												<p class="paragraph projects__text">
+													<b>Technologien:</b> HTML, CSS, Javascript
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+
+									<figcaption class="projects__slides--slide">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4 class="projects__text">Flashcard Application</h4>
+												<p class="paragraph projects__text">
+													Eine Flashcard App zum üben von Vokabeln oder
+													ähnlichem!
+												</p>
+												<p class="paragraph projects__text">
+													<b>Technologien:</b> HTML, CSS, React, nodeJS
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+
+									<figcaption class="projects__slides--slide">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4 class="projects__text">Business Website</h4>
+												<p class="paragraph projects__text">
+													Eine moderner Webauftritt für ein up-to-date
+													Fußpflegeunternehmen.
+												</p>
+												<p class="paragraph projects__text">
+													<b>Technologien:</b> Wordpress
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+								</figure>
+
+								<div class="projects__slides--nav">
+									<label
+										class="projects__slides--label label-active"
+										for="r1"
+									></label>
+									<label class="projects__slides--label" for="r2"></label>
+									<label class="projects__slides--label" for="r3"></label>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
 			<section id="contact">
 				<div class="container">
 					<div class="flexcontainer">
@@ -287,7 +287,7 @@
 										minlength="2"
 										required
 									></textarea>
-									<button disabled class="contact__left--btn">Senden</button>
+									<button class="contact__left--btn">Senden</button>
 								</form>
 							</div>
 						</figure>
@@ -317,7 +317,7 @@
 
 		<footer class="footer">
 			<p class="footer__text">
-				&copy; <span>2022</span> Jan Reichherzer.<br />
+				&copy; <span class="copyyear"></span> Jan Reichherzer.<br />
 				All rights reserved.
 			</p>
 		</footer>
