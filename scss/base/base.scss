@@ -19,7 +19,7 @@ html {
 	font-family: var(--font);
 	color: var(--color-font);
 	scroll-behavior: smooth;
-	scroll-padding: 18rem;
+	scroll-padding: 10rem;
 }
 
 body {
@@ -69,11 +69,14 @@ section {
 	margin: auto;
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	padding: 0 2rem;
 
 	@include m.respond(big) {
 		width: 1600px;
+		padding: 0 0;
+		justify-content: space-between;
 	}
 }
 // TRIANGLE OBJECT

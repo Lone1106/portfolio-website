@@ -16,9 +16,18 @@ navItems.forEach((item, index) => {
 	});
 });
 
+// WHEN CLICK ON LOGO REMOVE ACTIVE NAV
+const home = document.querySelector(".navigation__img");
+home.addEventListener("click", () => {
+	navItems.forEach((item) => {
+		item.classList.remove("active");
+	});
+	navLinks.forEach((link) => link.classList.remove("active-link"));
+});
+
 // TOGGLE MOBILE NAV
 
-// TOGGLE ACTIVE SLIDER LABEL
+// TOGGLE ACTIVE PROJECT SLIDER LABEL
 const sliderLabels = document.querySelectorAll(".projects__slides--label");
 sliderLabels.forEach((label) => {
 	label.addEventListener("click", () => {
@@ -26,3 +35,13 @@ sliderLabels.forEach((label) => {
 		label.classList.toggle("label-active");
 	});
 });
+
+// AUTO NAV PROJECTS
+let counter = 1;
+setInterval(() => {
+	document.getElementById("r" + counter).checked = true;
+	sliderLabels.forEach((item) => item.classList.remove("label-active"));
+	sliderLabels[counter - 1].classList.add("label-active");
+	counter++;
+	if (counter > 3) counter = 1;
+}, 5000);

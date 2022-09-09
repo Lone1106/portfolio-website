@@ -2,10 +2,15 @@
 @use "../abstracts/mixins" as m;
 
 .projects {
-	width: 1600px;
+	width: 1100px;
 	height: 500px;
 	overflow: hidden;
 	position: relative;
+
+	@include m.respond(big) {
+		width: 1600px;
+		padding: 0;
+	}
 
 	&__text {
 		color: var(--color-font) !important;
