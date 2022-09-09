@@ -70,10 +70,10 @@
 									Mediengestalter Digital & Print
 								</p>
 								<div class="landing__left--buttons">
-									<a href="#projects" class="button-bg button-light-bg"
+									<a href="#projects" class="button button-bg button-light"
 										>Projekte</a
 									>
-									<a href="#contact" class="button-bg button-accent-bg"
+									<a href="#contact" class="button button-bg button-accent"
 										>Kontakt</a
 									>
 								</div>
@@ -90,7 +90,136 @@
 			<section id="projects">
 				<div class="container">
 					<div class="flexcontainer">
-						<h3>Projekte</h3>
+						<article>
+							<h3>Projekte</h3>
+							<div class="projects">
+								<figure class="projects__slides">
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r1"
+										name="r"
+										checked
+									/>
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r2"
+										name="r"
+									/>
+									<input
+										class="projects__slides--radio"
+										type="radio"
+										id="r3"
+										name="r"
+									/>
+									<figcaption class="projects__slides--slide s1">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4>Terminal Website</h4>
+												<p class="paragraph">
+													Portfoliowebsite im Style eines Terminals. Gebe
+													Befehle ein um Informationen über den Besitzer der
+													Seite herauszufinden. Funktioniert wie ein übliches
+													Terminal!
+												</p>
+												<p class="paragraph">
+													<b>Technologien:</b> HTML, CSS, Javascript
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+
+									<figcaption class="projects__slides--slide">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4>Flashcard Application</h4>
+												<p class="paragraph">
+													Eine Flashcard App zum üben von Vokabeln oder ähnlichem!
+												</p>
+												<p class="paragraph">
+													<b>Technologien:</b> HTML, CSS, React, nodeJS
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+
+									<figcaption class="projects__slides--slide">
+										<div class="projects__slides--slide--left">
+											<div>
+												<h4>Business Website</h4>
+												<p class="paragraph">
+													Eine moderner Webauftritt für ein up-to-date Fußpflegeunternehmen.
+												</p>
+												<p class="paragraph">
+													<b>Technologien:</b> Wordpress
+												</p>
+
+												<div class="projects__buttons">
+													<a class="button button-sm button-light" href="#"
+														>Github</a
+													>
+													<a class="button button-sm button-accent" href="#"
+														>Vorschau</a
+													>
+												</div>
+											</div>
+										</div>
+
+										<div class="projects__slides--slide--right">
+											<img
+												src="src/Mockup1.webp"
+												lazy
+												alt="Preview of Project 1 on a Macbook"
+											/>
+										</div>
+									</figcaption>
+								</figure>
+
+								<div class="projects__slides--nav">
+									<label
+										class="projects__slides--label label-active"
+										for="r1"
+									></label>
+									<label class="projects__slides--label" for="r2"></label>
+									<label class="projects__slides--label" for="r3"></label>
+								</div>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -111,13 +240,13 @@
 								japanischen Kultur und Sprache.
 							</p>
 
-							<h4>Fähigkeiten</h4>
+							<h5>Fähigkeiten</h5>
 							<p class="paragraph">
 								HTML, CSS, SASS, Javascript, React, Wordpress, Packedge, Adobe
 								Illustrator, Adobe Photoshop, Prepress, CTP, Prinect
 							</p>
 
-							<h4>Sprachen</h4>
+							<h5>Sprachen</h5>
 							<p class="paragraph">
 								Deutsch (N), Englisch (C1), Japanisch (N3)
 							</p>
@@ -135,7 +264,6 @@
 				<div class="container">
 					<div class="flexcontainer">
 						<figure class="contact__left">
-
 							<div class="contact__left--wrapper">
 								<h3>Kontakt</h3>
 								<form class="contact__left--form">
@@ -143,20 +271,20 @@
 										class="contact__left--inp"
 										type="text"
 										placeholder="Name"
-										minLength="2"
+										minlength="2"
 										required
 									/>
 									<input
 										class="contact__left--inp"
 										type="email"
 										placeholder="Email"
-										minLength="2"
+										minlength="2"
 										required
 									/>
 									<textarea
 										class="contact__left--area"
 										placeholder="Nachricht"
-										minLength="2"
+										minlength="2"
 										required
 									></textarea>
 									<button disabled class="contact__left--btn">Senden</button>

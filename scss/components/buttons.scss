@@ -1,65 +1,68 @@
 @use "../abstracts/variables";
 
-.button-bg {
+.button:link,
+.button:visited {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	height: 4.5rem;
-	width: 20rem;
-	font-size: 2.4rem;
 	transition: all 0.3s;
 	letter-spacing: 1px;
 }
 
-.button-accent-bg:link,
-.button-accent-bg:visited {
+.button-bg:link,
+.button-bg:visited {
+	height: 4.5rem;
+	width: 20rem;
+	font-size: 2.4rem;
+}
+
+.button-sm:link,
+.button-sm:visited {
+	height: 3.5rem;
+	width: 10rem;
+	font-size: 1.6rem;
+}
+
+.button-accent:link,
+.button-accent:visited {
 	border: 3px solid transparent;
 	border-radius: var(--border-radius);
 	background-color: var(--color-accent);
 	color: var(--color-font);
 	font-weight: 700;
-
 }
 
-.button-accent-bg:hover {
+.button-accent:hover {
 	background-color: var(--color-main);
 	color: var(--color-accent);
 	border: 3px solid var(--color-accent);
 }
 
-.button-accent-bg:active {
+.button-accent:active {
 	background-color: var(--color-active);
 	border: 3px solid transparent;
 	color: var(--color-font);
 }
 
-.button-light-bg:link,
-.button-light-bg:visited {
+.button-light:link,
+.button-light:visited {
 	border: 3px solid var(--color-less);
 	border-radius: var(--border-radius);
 	background-color: var(--color-main);
 	color: var(--color-less);
 	font-weight: 400;
-
 }
 
-.button-light-bg:hover {
+.button-light:hover {
 	background-color: var(--color-less);
 	color: var(--color-main);
 	border: 3px solid var(--color-less);
 }
 
-.button-light-bg:active {
+.button-light:active {
 	background-color: var(--color-bg);
 	border: 3px solid transparent;
 	color: var(--color-main);
 }
 
-.button-accent-sm:link,
-.button-accent-sm:visited {
-}
-
-.button-light-sm:link,
-.button-light-sm:visited {
-}
