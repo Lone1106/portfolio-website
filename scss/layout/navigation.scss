@@ -96,6 +96,18 @@
 			color: var(--color-main);
 			z-index: 9998;
 		}
+
+		&--lan:link,
+		&--lan:visited {
+			text-decoration: none;
+			color: var(--color-less);
+			transition: 0.3s;
+		}
+
+		&--lan:hover,
+		&--lan:active {
+			color: var(--color-main);
+		}
 	}
 }
 

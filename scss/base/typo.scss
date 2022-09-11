@@ -19,12 +19,18 @@ h4 {
 h5 {
 	color: var(--color-main);
 	font-size: 1.6rem;
-	margin-bottom: .4rem;
+	margin-bottom: 0.4rem;
 }
 
 .paragraph {
 	font-size: var(--fontsize-normal);
 	line-height: var(--font-lineheigth);
-	margin-bottom: 1.6rem;
+	margin-bottom: 1.2rem;
+	color: var(--color-main);
+}
+
+.paragraph-wm {
+	font-size: var(--fontsize-normal);
+	line-height: var(--font-lineheigth);
 	color: var(--color-main);
 }

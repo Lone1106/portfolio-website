@@ -16,6 +16,7 @@
 		color: var(--color-font) !important;
 	}
 
+
 	&__slides {
 		width: 300%;
 		height: 100%;
@@ -38,13 +39,13 @@
 		&--label {
 			width: 50px;
 			height: 20px;
-			border: 3px solid var(--color-bg);
+			border: 3px solid var(--color-less);
 			border-radius: var(--border-radius);
 			transition: background-color 0.3s;
 			cursor: pointer;
 
 			&:hover {
-				background-color: var(--color-bg);
+				background-color: var(--color-less);
 			}
 		}
 
@@ -52,7 +53,7 @@
 			width: 33.34%;
 			height: 100%;
 			display: flex;
-			transition: 0.5s;
+			transition: 1.5s;
 
 			&--left {
 				width: 50%;
@@ -86,7 +87,7 @@
 }
 
 .label-active {
-	background-color: var(--color-bg);
+	background-color: var(--color-less);
 }
 
 #r1:checked ~ .s1 {
@@ -100,4 +101,3 @@
 #r3:checked ~ .s1 {
 	margin-left: -66.68%;
 }
-

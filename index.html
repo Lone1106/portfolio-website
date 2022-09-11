@@ -1,9 +1,14 @@
-<!-- ICONS INSTEAD OF SECTION HEADING OR BOTH? -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Jan Reichherzer - Portfolio Website" />
+		<meta
+			name="keywords"
+			content="HTML, CSS, Sass, JavaScript, React, Python, Frontend, Mediengestalter, Webdesign, Digital, Print, Wordpress"
+		/>
+		<meta name="author" content="Jan Reichherzer" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -22,14 +27,19 @@
 	<body>
 		<header class="navigation">
 			<div class="navcontainer">
-				<a class="navigation__img" href="#"><img src="src/logo.png" alt="Logo of the portfolio owners initials RJ" /></a>
+				<a class="navigation__img" href="#"
+					><img
+						src="src/logo.png"
+						alt="Logo mit den Initialen von Jan Reichherzer, RJ"
+						loading="lazy"
+				/></a>
 				<nav class="navigation__nav">
 					<ul class="navigation__list">
 						<li class="navigation__list--item">
-							<a class="navigation__list--link" href="#projects">Projekte</a>
+							<a class="navigation__list--link" href="#about">About</a>
 						</li>
 						<li class="navigation__list--item">
-							<a class="navigation__list--link" href="#about">About</a>
+							<a class="navigation__list--link" href="#projects">Projekte</a>
 						</li>
 						<li class="navigation__list--item">
 							<a class="navigation__list--link" href="#contact">Kontakt</a>
@@ -49,6 +59,9 @@
 								href="https://github.com/Lone1106"
 								><i class="fa-2xl fa-brands fa-square-github"></i
 							></a>
+						</li>
+						<li>
+							<a class="navigation__list--lan" href="index-en.html">EN</a>
 						</li>
 					</ul>
 				</nav>
@@ -80,7 +93,12 @@
 						</figure>
 
 						<figure class="landing__right">
-							<img class="landing__right--img" src="src/jan-sw.webp" alt="Black white picture of the portfolio owner while holding a macbook" lazy />
+							<img
+								class="landing__right--img"
+								src="src/jan-sw.webp"
+								alt="Schwarzweißbild von Jan Reichherzer während er ein Macbook hält"
+								loading="lazy"
+							/>
 						</figure>
 					</div>
 				</div>
@@ -93,19 +111,26 @@
 							<h3>About</h3>
 							<p class="paragraph">
 								Mein Name ist Jan. Von September 2017 bis März 2021 durchlief
-								ich eine dreijährige Ausbildung als Mediengestalter Digital &
-								Print im Bereich der Druckvorstufe. Seit März 2021 bin ich in
-								auch diesem Bereich tätig. Meine Interessen erstrecken sich
-								jedoch über den Bereich Print, weshalb ich mich ebenso mit dem
-								digitalen Bereich beschäftige. Ebenso interessiere ich mich für
-								Fremdsprachen und Kulturen, aktuell beschäftige ich mich mit der
-								japanischen Kultur und Sprache.
+								ich eine dreijährige Ausbildung zum Mediengestalter Digital &
+								Print im Bereich Druckvorstufe-Offsetdruck. Seit März 2021 bin
+								ich in auch diesem Bereich tätig. Aktuelle Aufgaben umfassen
+								hauptsächlich Prüfen und Aufbereitung von Druckdaten, farbliche
+								Korrekturen an Proofs/Kundenvorlagen, sowie Belichten von
+								Druckplatten im Bereich CTP. Meine Interessen erstrecken sich
+								jedoch über den Bereich Print, weshalb ich mich in meiner
+								Freizeit ebenso mit dem digitalen Bereich beschäftige. Nebenbei
+								interessiere ich mich für Fremdsprachen und Kulturen, aktuell
+								beschäftige ich mich mit der japanischen Kultur und Sprache.
 							</p>
 
 							<h5>Fähigkeiten</h5>
+							<p class="paragraph-wm">
+								<b>Digital:</b> HTML, CSS, SASS, Javascript, React, Wordpress,
+								Python
+							</p>
 							<p class="paragraph">
-								HTML, CSS, SASS, Javascript, React, Wordpress, Packedge, Adobe
-								Illustrator, Adobe Photoshop, Prepress, CTP, Prinect
+								<b>Print:</b> Adobe Illustrator, Adobe Photoshop, Packedge, CTP,
+								Prinect, Druckdatenaufbereitung, Farbanpassung
 							</p>
 
 							<h5>Sprachen</h5>
@@ -122,11 +147,11 @@
 				</div>
 			</section>
 
-			<section id="projects" class="section-test">
+			<section id="projects" class="section-blue">
 				<div class="container-main">
 					<div class="flexcontainer">
 						<article>
-							<h3 class="projects__text">Projekte</h3>
+							<!-- <h3 class="projects__text">Projekte</h3> -->
 							<div class="projects">
 								<figure class="projects__slides">
 									<input
@@ -176,7 +201,7 @@
 										<div class="projects__slides--slide--right">
 											<img
 												src="src/Mockup1.webp"
-												lazy
+												loading="lazy"
 												alt="Preview of Project 1 on a Macbook"
 											/>
 										</div>
@@ -208,7 +233,7 @@
 										<div class="projects__slides--slide--right">
 											<img
 												src="src/Mockup1.webp"
-												lazy
+												loading="lazy"
 												alt="Preview of Project 1 on a Macbook"
 											/>
 										</div>
@@ -240,13 +265,12 @@
 										<div class="projects__slides--slide--right">
 											<img
 												src="src/Mockup1.webp"
-												lazy
+												loading="lazy"
 												alt="Preview of Project 1 on a Macbook"
 											/>
 										</div>
 									</figcaption>
 								</figure>
-
 
 								<div class="projects__slides--nav">
 									<label
@@ -256,6 +280,7 @@
 									<label class="projects__slides--label" for="r2"></label>
 									<label class="projects__slides--label" for="r3"></label>
 								</div>
+							</div>
 						</article>
 					</div>
 				</div>
@@ -270,15 +295,15 @@
 								<form class="contact__left--form">
 									<input
 										class="contact__left--inp"
-										type="text"
-										placeholder="Name"
+										type="email"
+										placeholder="Email"
 										minlength="2"
 										required
 									/>
 									<input
 										class="contact__left--inp"
-										type="email"
-										placeholder="Email"
+										type="text"
+										placeholder="Betreff"
 										minlength="2"
 										required
 									/>
