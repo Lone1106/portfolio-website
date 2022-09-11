@@ -26,6 +26,10 @@ home.addEventListener("click", () => {
 });
 
 // TOGGLE MOBILE NAV
+const navButton = document.querySelector(".navigation__mobile");
+navButton.addEventListener("click", () => {
+	console.log("Toggle mobile nav");
+});
 
 // TOGGLE ACTIVE PROJECT SLIDER LABEL
 const sliderLabels = document.querySelectorAll(".projects__slides--label");
@@ -44,4 +48,4 @@ setInterval(() => {
 	sliderLabels[counter - 1].classList.add("label-active");
 	counter++;
 	if (counter > 3) counter = 1;
-}, 5000);
+}, 10000);

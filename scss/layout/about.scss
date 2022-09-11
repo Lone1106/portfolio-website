@@ -1,6 +1,9 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins" as m;
 
 .about {
+	height: 100%;
+
 	&__link:link,
 	&__link:visited {
 		color: var(--color-accent);
@@ -10,5 +13,54 @@
 
 	&__link:hover {
 		color: var(--color-hover);
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 5rem;
+
+		@include m.respond(tab-land) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+
+		@include m.respond(tab-land) {
+			width: 100%;
+		}
+	}
+
+	&__right {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 5rem;
+
+		@include m.respond(tab-land) {
+			width: 100%;
+			justify-content: flex-start;
+		}
+
+		&--header {
+			margin-bottom: 1rem;
+		}
+
+		&--list {
+			list-style: none;
+			font-size: 1.4rem;
+			color: var(--color-main);
+
+			& li:not(:last-child) {
+				margin-bottom: 0.5rem;
+			}
+		}
 	}
 }
