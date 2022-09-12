@@ -49,3 +49,42 @@ setInterval(() => {
 	counter++;
 	if (counter > 3) counter = 1;
 }, 10000);
+
+// REVEAL SECTIONS ON SCROLL
+function isVisible(element) {
+	let elementBox = element.getBoundingClientRect();
+	let distanceFromTop = -100;
+
+	if (elementBox.top - window.innerHeight < distanceFromTop) return true;
+}
+
+function throttle(func, limit) {
+	let inThrottle;
+	return function () {
+		if (!inThrottle) {
+			func();
+			inThrottle = true;
+			setTimeout(() => (inThrottle = false), limit);
+		}
+	};
+}
+
+function scanDocument() {
+	let sections = document.querySelectorAll(".section-hidden");
+	sections.forEach((section) => {
+		if (isVisible(section)) section.classList.remove("section-hidden");
+	});
+}
+document.addEventListener("scroll", throttle(scanDocument, 500));
+
+// RESET FORM
+const formButton = document.querySelector(".contact__left--btn");
+formButton.addEventListener("click", (e) => {
+	e.preventDefault();
+	let email = document.getElementById("email"),
+		subject = document.getElementById("subject"),
+		message = document.getElementById("message");
+	email.value = "";
+	subject.value = "";
+	message.value = "";
+});
