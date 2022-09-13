@@ -3,32 +3,24 @@ const copy = document.querySelector(".copyyear");
 let year = new Date().getFullYear();
 copy.innerHTML = year;
 
-// TOGGLE NAV ACTIVE
-const navLinks = document.querySelectorAll(".navigation__list--link"),
-	navItems = document.querySelectorAll(".navigation__list--item");
-
-navItems.forEach((item, index) => {
-	item.addEventListener("click", () => {
-		navItems.forEach((item) => item.classList.remove("active"));
-		item.classList.toggle("active");
-		navLinks.forEach((link) => link.classList.remove("active-link"));
-		navLinks[index].classList.toggle("active-link");
-	});
-});
-
-// WHEN CLICK ON LOGO REMOVE ACTIVE NAV
-const home = document.querySelector(".navigation__img");
-home.addEventListener("click", () => {
-	navItems.forEach((item) => {
-		item.classList.remove("active");
-	});
-	navLinks.forEach((link) => link.classList.remove("active-link"));
-});
-
 // TOGGLE MOBILE NAV
-const navButton = document.querySelector(".navigation__mobile");
-navButton.addEventListener("click", () => {
-	console.log("Toggle mobile nav");
+const mobileNav = document.querySelector(".nav-mobile"),
+	mobileNavClose = document.querySelector(".nav-mobile__close"),
+	mobileNavOpen = document.querySelector(".navigation__mobile"),
+	navLinks = document.querySelectorAll(".navigation__list--link");
+
+mobileNavOpen.addEventListener("click", () => {
+	mobileNav.classList.remove("nav-mobile-hidden");
+});
+
+mobileNavClose.addEventListener("click", () => {
+	mobileNav.classList.add("nav-mobile-hidden");
+});
+
+navLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		mobileNav.classList.add("nav-mobile-hidden");
+	});
 });
 
 // TOGGLE ACTIVE PROJECT SLIDER LABEL
@@ -78,7 +70,7 @@ function scanDocument() {
 document.addEventListener("scroll", throttle(scanDocument, 500));
 
 // RESET FORM
-const formButton = document.querySelector(".contact__left--btn");
+const formButton = document.querySelector(".contact__main--btn");
 formButton.addEventListener("click", (e) => {
 	e.preventDefault();
 	let email = document.getElementById("email"),

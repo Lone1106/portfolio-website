@@ -69,6 +69,37 @@
 					<i class="fa-solid fa-bars fa-2xl"></i>
 				</p>
 			</div>
+			<nav class="nav-mobile nav-mobile-hidden">
+				<i class="fa-solid fa-xmark fa-xl nav-mobile__close"></i>
+				<div>
+					<a class="navigation__list--lan" href="index-en.html">EN</a>
+				</div>
+				<ul class="nav-mobile__list">
+					<li>
+						<a class="navigation__list--link" href="#about">About</a>
+					</li>
+					<li>
+						<a class="navigation__list--link" href="#projects">Projekte</a>
+					</li>
+					<li>
+						<a class="navigation__list--link" href="#contact">Kontakt</a>
+					</li>
+				</ul>
+				<div class="nav-mobile__buttons">
+					<a
+						target="_blank"
+						class="navigation__list--social"
+						href="https://www.linkedin.com/in/janrei1106/"
+						><i class="fa-xl fa-brands fa-linkedin"></i
+					></a>
+					<a
+						target="_blank"
+						class="navigation__list--social"
+						href="https://github.com/Lone1106"
+						><i class="fa-xl fa-brands fa-square-github"></i
+					></a>
+				</div>
+			</nav>
 		</header>
 
 		<main>
@@ -302,12 +333,12 @@
 			<section id="contact" class="section-hidden">
 				<div class="container">
 					<div class="flexcontainer">
-						<figure class="contact__left">
-							<div class="contact__left--wrapper">
+						<figure class="contact__main">
+							<div class="contact__main--wrapper">
 								<h3>Kontakt</h3>
-								<form class="contact__left--form">
+								<form class="contact__main--form">
 									<input
-										class="contact__left--inp"
+										class="contact__main--inp"
 										id="email"
 										type="email"
 										placeholder="Email"
@@ -315,7 +346,7 @@
 										required
 									/>
 									<input
-										class="contact__left--inp"
+										class="contact__main--inp"
 										id="subject"
 										type="text"
 										placeholder="Betreff"
@@ -323,33 +354,15 @@
 										required
 									/>
 									<textarea
-										class="contact__left--area"
+										class="contact__main--area"
 										id="message"
 										placeholder="Nachricht"
 										minlength="2"
 										required
 									></textarea>
-									<button class="contact__left--btn">Senden</button>
+									<button class="contact__main--btn">Senden</button>
 								</form>
 							</div>
-						</figure>
-
-						<figure class="contact__right">
-							<a
-								target="_blank"
-								class="contact__right--link"
-								href="https://www.linkedin.com/in/janrei1106/"
-								><i class="fa-2xl fa-brands fa-linkedin"></i
-								>https://www.linkedin.com/in/janrei1106/</a
-							>
-
-							<a
-								target="_blank"
-								class="contact__right--link"
-								href="https://github.com/Lone1106"
-								><i class="fa-2xl fa-brands fa-square-github"></i
-								>https://github.com/Lone1106</a
-							>
 						</figure>
 					</div>
 				</div>
