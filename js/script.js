@@ -70,13 +70,9 @@ function scanDocument() {
 document.addEventListener("scroll", throttle(scanDocument, 500));
 
 // RESET FORM
-const formButton = document.querySelector(".contact__main--btn");
-formButton.addEventListener("click", (e) => {
-	e.preventDefault();
-	let email = document.getElementById("email"),
-		subject = document.getElementById("subject"),
-		message = document.getElementById("message");
-	email.value = "";
-	subject.value = "";
-	message.value = "";
+const form = document.querySelector(".contact__main--form");
+form.addEventListener("submit", () => {
+	setTimeout(() => {
+		form.reset();
+	}, 5000);
 });

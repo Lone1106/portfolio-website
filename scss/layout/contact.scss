@@ -13,8 +13,12 @@
 			width: 50%;
 
 			@include m.respond(tab-port) {
-					width: 70%;
-				}
+				width: 70%;
+			}
+
+			@include m.respond(phone) {
+				width: 100%;
+			}
 		}
 
 		&--form {
@@ -22,6 +26,7 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
+
 		}
 
 		&--inp {
@@ -37,7 +42,7 @@
 			font-size: var(--fontsize-normal);
 
 			&:focus {
-				border-bottom: 5px solid var(--color-main);
+				border-bottom: 5px solid var(--color-valid);
 			}
 
 			&:focus:invalid {
@@ -65,6 +70,10 @@
 
 			&:focus:invalid {
 				border-bottom: 5px solid var(--color-error);
+			}
+
+			@include m.respond(phone) {
+				height: 300px;
 			}
 		}
 

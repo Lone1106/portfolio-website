@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins" as m;
 
 .button:link,
 .button:visited {
@@ -15,6 +16,10 @@
 	height: 4.5rem;
 	width: 20rem;
 	font-size: 2.4rem;
+
+	@include m.respond(phone) {
+		width: 15rem;
+	}
 }
 
 .button-sm:link,
@@ -65,4 +70,3 @@
 	border: 3px solid var(--color-bg);
 	color: var(--color-main);
 }
-

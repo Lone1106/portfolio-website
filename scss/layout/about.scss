@@ -22,6 +22,10 @@
 		@include m.respond(tab-land) {
 			flex-direction: column;
 		}
+
+		@include m.respond(phone) {
+			gap: 2rem;
+		}
 	}
 
 	&__left {

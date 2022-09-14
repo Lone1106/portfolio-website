@@ -9,8 +9,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
+		z-index: 555;
 
-		@media (hover: none) {
+		@include m.respond(tab-land) {
 			align-items: center;
 		}
 
@@ -41,8 +42,9 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
+		z-index: 444;
 
-		@media (hover: none) {
+		@include m.respond(tab-land) {
 			display: none;
 		}
 

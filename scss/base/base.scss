@@ -20,6 +20,10 @@ html {
 	color: var(--color-font);
 	scroll-behavior: smooth;
 	scroll-padding: 10rem;
+
+	@include m.respond(phone) {
+		font-size: 60%;
+	}
 }
 
 body {
@@ -34,8 +38,8 @@ section {
 	background-color: var(--color-bg);
 	margin-bottom: 15rem;
 	transition: opacity 0.5s;
+
+	@include m.respond(phone) {
+		margin-bottom: 7rem;
+	}
 }
-
-
-
-

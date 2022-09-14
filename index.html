@@ -336,11 +336,16 @@
 						<figure class="contact__main">
 							<div class="contact__main--wrapper">
 								<h3>Kontakt</h3>
-								<form class="contact__main--form">
+								<form
+									class="contact__main--form"
+									method="POST"
+									action="https://formsubmit.co/jan.reichherzer@gmx.de"
+								>
 									<input
 										class="contact__main--inp"
 										id="email"
 										type="email"
+										name="email"
 										placeholder="Email"
 										minlength="2"
 										required
@@ -349,6 +354,7 @@
 										class="contact__main--inp"
 										id="subject"
 										type="text"
+										name="_subject"
 										placeholder="Betreff"
 										minlength="2"
 										required
@@ -356,11 +362,17 @@
 									<textarea
 										class="contact__main--area"
 										id="message"
+										name="message"
 										placeholder="Nachricht"
 										minlength="2"
 										required
 									></textarea>
-									<button class="contact__main--btn">Senden</button>
+									<button
+										class="contact__main--btn"
+										type="submit"
+									>
+										Senden
+									</button>
 								</form>
 							</div>
 						</figure>

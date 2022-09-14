@@ -17,6 +17,10 @@
 		height: 800px;
 	}
 
+	@include m.respond(phone) {
+		height: 600px;
+	}
+
 	&__text {
 		color: var(--color-font) !important;
 	}
@@ -71,6 +75,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: flex-start;
+				padding-left: 0.1rem;
 
 				@include m.respond(tab-port) {
 					width: 100%;
@@ -95,6 +100,10 @@
 
 					@include m.respond(tab-land) {
 						height: 80%;
+					}
+
+					@include m.respond(phone) {
+						height: 60%;
 					}
 				}
 			}
@@ -124,3 +133,4 @@
 #r3:checked ~ .s1 {
 	margin-left: -66.68%;
 }
+
