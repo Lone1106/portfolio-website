@@ -1,14 +1,19 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins" as m;
 
 h1 {
 	font-size: 6rem;
+
+	@include m.respond(phone) {
+		font-size: 4rem;
+	}
 }
 
 h3 {
 	color: var(--color-main);
 	font-size: 3.6rem;
-	margin-bottom: 3.6rem;
-	// text-align: center;
+	margin-bottom: 8.2rem;
+	text-align: center;
 }
 
 h4 {

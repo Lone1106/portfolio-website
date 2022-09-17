@@ -14,6 +14,10 @@
 	background-color: var(--color-accent);
 }
 
+main {
+	position: relative;
+}
+
 html {
 	font-size: 82.5%;
 	font-family: var(--font);
@@ -22,7 +26,7 @@ html {
 	scroll-padding: 10rem;
 
 	@include m.respond(phone) {
-		font-size: 60%;
+		font-size: 70%;
 	}
 }
 

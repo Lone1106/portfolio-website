@@ -17,21 +17,19 @@
 
 	&__wrapper {
 		display: flex;
-		gap: 5rem;
+		gap: 20rem;
 
 		@include m.respond(tab-land) {
 			flex-direction: column;
-		}
-
-		@include m.respond(phone) {
 			gap: 2rem;
 		}
 	}
 
 	&__left {
-		width: 50%;
+		width: 80%;
 		height: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 
@@ -41,17 +39,59 @@
 	}
 
 	&__right {
-		width: 50%;
+		width: 20%;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: flex-start;
-		gap: 1.2rem;
 
 		@include m.respond(tab-land) {
 			width: 100%;
-			justify-content: flex-start;
+			justify-content: space-between;
+			align-items: flex-end;
+			flex-direction: row;
+		}
+
+		@include m.respond(phone) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&--list {
+			list-style: none;
+			color: var(--color-main);
+			font-size: var(--fontsize-normal);
+			margin-bottom: 3rem;
+
+			@include m.respond(tab-land) {
+				margin-bottom: 0;
+			}
+
+			@include m.respond(phone) {
+				margin-bottom: 3rem;
+			}
+		}
+
+		&--item {
+			margin-left: 1.4rem;
+			position: relative;
+		}
+
+		&--item:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+
+		&--item::before {
+			content: "";
+			width: 8px;
+			height: 8px;
+			border: 2px solid var(--color-accent);
+			border-radius: 100%;
+			position: absolute;
+			top: 50%;
+			left: -15px;
+			transform: translateY(-50%);
 		}
 	}
 }

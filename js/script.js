@@ -4,24 +4,24 @@ let year = new Date().getFullYear();
 copy.innerHTML = year;
 
 // TOGGLE MOBILE NAV
-const mobileNav = document.querySelector(".nav-mobile"),
-	mobileNavClose = document.querySelector(".nav-mobile__close"),
-	mobileNavOpen = document.querySelector(".navigation__mobile"),
-	navLinks = document.querySelectorAll(".navigation__list--link");
+// const mobileNav = document.querySelector(".nav-mobile"),
+// 	mobileNavClose = document.querySelector(".nav-mobile__close"),
+// 	mobileNavOpen = document.querySelector(".navigation__mobile"),
+// 	navLinks = document.querySelectorAll(".navigation__list--link");
 
-mobileNavOpen.addEventListener("click", () => {
-	mobileNav.classList.remove("nav-mobile-hidden");
-});
+// mobileNavOpen.addEventListener("click", () => {
+// 	mobileNav.classList.remove("nav-mobile-hidden");
+// });
 
-mobileNavClose.addEventListener("click", () => {
-	mobileNav.classList.add("nav-mobile-hidden");
-});
+// mobileNavClose.addEventListener("click", () => {
+// 	mobileNav.classList.add("nav-mobile-hidden");
+// });
 
-navLinks.forEach((link) => {
-	link.addEventListener("click", () => {
-		mobileNav.classList.add("nav-mobile-hidden");
-	});
-});
+// navLinks.forEach((link) => {
+// 	link.addEventListener("click", () => {
+// 		mobileNav.classList.add("nav-mobile-hidden");
+// 	});
+// });
 
 // TOGGLE ACTIVE PROJECT SLIDER LABEL
 const sliderLabels = document.querySelectorAll(".projects__slides--label");

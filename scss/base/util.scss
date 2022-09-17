@@ -16,6 +16,10 @@
 		padding: 0 0;
 		justify-content: space-between;
 	}
+
+	@include m.respond(phone) {
+		padding: 0 2.4rem;
+	}
 }
 
 .section-main {

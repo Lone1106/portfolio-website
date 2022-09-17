@@ -65,39 +65,27 @@
 						</li>
 					</ul>
 				</nav>
-				<p class="navigation__mobile">
-					<i class="fa-solid fa-bars fa-2xl"></i>
-				</p>
 			</div>
+
 			<nav class="nav-mobile nav-mobile-hidden">
-				<i class="fa-solid fa-xmark fa-xl nav-mobile__close"></i>
-				<div>
-					<a class="navigation__list--lan" href="index-en.html">EN</a>
-				</div>
-				<ul class="nav-mobile__list">
-					<li>
-						<a class="navigation__list--link" href="#about">About</a>
-					</li>
-					<li>
-						<a class="navigation__list--link" href="#projects">Projekte</a>
-					</li>
-					<li>
-						<a class="navigation__list--link" href="#contact">Kontakt</a>
-					</li>
-				</ul>
-				<div class="nav-mobile__buttons">
-					<a
-						target="_blank"
-						class="navigation__list--social"
-						href="https://www.linkedin.com/in/janrei1106/"
-						><i class="fa-xl fa-brands fa-linkedin"></i
-					></a>
-					<a
-						target="_blank"
-						class="navigation__list--social"
-						href="https://github.com/Lone1106"
-						><i class="fa-xl fa-brands fa-square-github"></i
-					></a>
+				<input type="checkbox" id="navtoggle" class="nav-mobile__checkbox" />
+				<label for="navtoggle" class="nav-mobile__button">
+					<span class="nav-mobile__icon">&nbsp;</span>
+				</label>
+				<div class="nav-mobile__backdrop">&nbsp;</div>
+
+				<div class="nav-mobile__container">
+					<ul class="nav-mobile__container--list">
+						<li class="nav-mobile__container--item">
+							<a class="navigation__list--link" href="#about">About</a>
+						</li>
+						<li class="nav-mobile__container--item">
+							<a class="navigation__list--link" href="#projects">Projekte</a>
+						</li>
+						<li class="nav-mobile__container--item">
+							<a class="navigation__list--link" href="#contact">Kontakt</a>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
@@ -148,43 +136,41 @@
 										durchlief ich eine dreijährige Ausbildung zum
 										Mediengestalter Digital & Print im Bereich
 										Druckvorstufe-Offsetdruck. Seit März 2021 bin ich in auch
-										diesem Bereich tätig. Meine aktuellen Aufgaben umfassen
-										hauptsächlich Prüfen und Aufbereitung von Druckdaten,
-										farbliche Korrekturen entsprchend Proofs oder Kundenmustern,
-										sowie Belichten von Druckplatten im Bereich CTP. Meine
-										Interessen erstrecken sich jedoch über den Bereich Print,
-										weshalb ich mich in meiner Freizeit ebenso mit dem digitalen
-										Bereich beschäftige. Nebenbei interessiere ich mich für
-										Fremdsprachen und Kulturen, aktuell beschäftige ich mich mit
-										der japanischen Kultur und Sprache und habe vor mich in
-										Zukunft noch mit einer weiteren Sprache/Kultur zu
-										beschäftigen. Habe ich dein Intersse geweckt?
-										<a class="about__link" href="#contact">Kontakiere</a> mich
-										doch!
+										diesem Bereich tätig.
+									</p>
+
+									<p class="paragraph">
+										Meine aktuellen Aufgaben umfassen hauptsächlich Prüfen und
+										Aufbereitung von Druckdaten, farbliche Korrekturen
+										entsprchend Proofs oder Kundenmustern, sowie Belichten von
+										Druckplatten im Bereich CTP.
+									</p>
+
+									<p class="paragraph">
+										Meine Interessen erstrecken sich jedoch über den Bereich
+										Print, weshalb ich mich in meiner Freizeit ebenso mit dem
+										digitalen Bereich beschäftige.
+									</p>
+
+									<p class="paragraph">
+										Nebenbei interessiere ich mich für Fremdsprachen und
+										Kulturen, aktuell beschäftige ich mich mit der japanischen
+										Kultur und Sprache und habe vor mich in Zukunft noch mit
+										einer weiteren Sprache/Kultur zu beschäftigen.
 									</p>
 								</figure>
 								<figure class="about__right">
-									<div>
-										<h5>Print</h5>
-										<p class="paragraph">
-											Photoshop, Illustrator, Packedge, Prinect, CTP,
-											Datenaufbereitung-Offset, Farbkorrektur
-										</p>
-									</div>
-
-									<div>
-										<h5>Digital</h5>
-										<p class="paragraph">
-											HTML, CSS, SASS, Javascript, React, Wordpress, Python
-										</p>
-									</div>
-
-									<div>
-										<h5>Sprachen</h5>
-										<p class="paragraph">
-											Deutsch(N), Englisch(C1), Japanisch(B1)
-										</p>
-									</div>
+									<ul class="about__right--list">
+										<li class="about__right--item">Druckvorstufe/Ctp</li>
+										<li class="about__right--item">Adobe AI/PS</li>
+										<li class="about__right--item">HTML/CSS/SASS</li>
+										<li class="about__right--item">JS/React</li>
+										<li class="about__right--item">Wordpress</li>
+										<li class="about__right--item">DE/EN/JP</li>
+									</ul>
+									<a href="#contact" class="button button-bg button-accent"
+										>Kontakt</a
+									>
 								</figure>
 							</div>
 						</article>
@@ -367,10 +353,7 @@
 										minlength="2"
 										required
 									></textarea>
-									<button
-										class="contact__main--btn"
-										type="submit"
-									>
+									<button class="contact__main--btn" type="submit">
 										Senden
 									</button>
 								</form>
