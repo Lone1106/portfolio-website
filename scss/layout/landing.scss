@@ -13,6 +13,7 @@
 
 		@include m.respond(tab-land) {
 			align-items: center;
+			width: 100%;
 		}
 
 		&--emote {

@@ -10,7 +10,7 @@
 		align-items: center;
 
 		&--wrapper {
-			width: 50%;
+			width: 40%;
 
 			@include m.respond(tab-port) {
 				width: 70%;
@@ -31,7 +31,7 @@
 
 		&--inp {
 			width: 100%;
-			padding: 1rem 1rem;
+			padding: 1.2rem;
 			outline: none;
 			border: none;
 			border-bottom: 5px solid var(--color-main);
@@ -54,7 +54,7 @@
 			width: 100%;
 			height: 400px;
 			resize: none;
-			padding: 1rem 1rem;
+			padding: 1.2rem;
 			margin-bottom: 1.6rem;
 			background-color: #fff;
 			outline: none;

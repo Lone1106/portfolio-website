@@ -95,16 +95,8 @@
 				}
 
 				& img {
-					height: 90%;
-					width: auto;
-
-					@include m.respond(tab-land) {
-						height: 80%;
-					}
-
-					@include m.respond(phone) {
-						height: 60%;
-					}
+					height: auto;
+					width: 100%;
 				}
 			}
 		}
