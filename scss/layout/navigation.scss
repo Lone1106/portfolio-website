@@ -221,7 +221,9 @@
 
 		&--social {
 			list-style: none;
+			width: 100%;
 			display: flex;
+			justify-content: space-between;
 			gap: 1.8rem;
 		}
 	}

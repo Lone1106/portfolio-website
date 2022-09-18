@@ -3,7 +3,7 @@ const copy = document.querySelector(".copyyear");
 let year = new Date().getFullYear();
 copy.innerHTML = year;
 
-// HIDE MOBILE NAV
+// HIDE MOBILE NAV ON ITEM CLICK
 const navItems = document.querySelectorAll(".nav-mobile__container--item"),
 	navToggle = document.getElementById("navtoggle");
 navItems.forEach((item) => {
