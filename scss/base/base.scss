@@ -23,7 +23,7 @@ html {
 	font-family: var(--font);
 	color: var(--color-font);
 	scroll-behavior: smooth;
-	scroll-padding: 10rem;
+	scroll-padding: 6rem;
 
 	@include m.respond(phone) {
 		font-size: 70%;

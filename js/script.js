@@ -3,25 +3,14 @@ const copy = document.querySelector(".copyyear");
 let year = new Date().getFullYear();
 copy.innerHTML = year;
 
-// TOGGLE MOBILE NAV
-// const mobileNav = document.querySelector(".nav-mobile"),
-// 	mobileNavClose = document.querySelector(".nav-mobile__close"),
-// 	mobileNavOpen = document.querySelector(".navigation__mobile"),
-// 	navLinks = document.querySelectorAll(".navigation__list--link");
-
-// mobileNavOpen.addEventListener("click", () => {
-// 	mobileNav.classList.remove("nav-mobile-hidden");
-// });
-
-// mobileNavClose.addEventListener("click", () => {
-// 	mobileNav.classList.add("nav-mobile-hidden");
-// });
-
-// navLinks.forEach((link) => {
-// 	link.addEventListener("click", () => {
-// 		mobileNav.classList.add("nav-mobile-hidden");
-// 	});
-// });
+// HIDE MOBILE NAV
+const navItems = document.querySelectorAll(".nav-mobile__container--item"),
+	navToggle = document.getElementById("navtoggle");
+navItems.forEach((item) => {
+	item.addEventListener("click", () => {
+		navToggle.checked = false;
+	});
+});
 
 // TOGGLE ACTIVE PROJECT SLIDER LABEL
 const sliderLabels = document.querySelectorAll(".projects__slides--label");

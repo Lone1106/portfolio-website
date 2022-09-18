@@ -150,6 +150,11 @@
 			top: 30px;
 			right: 30px;
 		}
+
+		@include m.respond(phone) {
+			top: 25px;
+			right: 25px;
+		}
 	}
 
 	&__icon {
@@ -192,8 +197,9 @@
 		top: 0;
 		right: 0;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
 		z-index: 9999;
 		transition: all 0.4s;
 
@@ -204,6 +210,19 @@
 		&--item {
 			margin-bottom: 2rem;
 			font-size: 1.8rem;
+		}
+
+		&--link:link,
+		&--link:visited {
+			text-decoration: none;
+			color: var(--color-main);
+			font-size: 1.8rem;
+		}
+
+		&--social {
+			list-style: none;
+			display: flex;
+			gap: 1.8rem;
 		}
 	}
 
@@ -230,6 +249,7 @@
 	&__checkbox:checked ~ &__container {
 		width: 200px;
 		opacity: 1;
+		padding: 2.6rem;
 	}
 
 	&__checkbox:checked + &__button &__icon {

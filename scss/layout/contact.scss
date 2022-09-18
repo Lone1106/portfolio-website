@@ -8,6 +8,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		gap: 4.8rem;
+
 
 		&--wrapper {
 			width: 40%;
@@ -26,7 +28,6 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
-
 		}
 
 		&--inp {
@@ -89,10 +90,6 @@
 			font-weight: 700;
 			letter-spacing: 1px;
 			transition: all 0.3s;
-
-			&:disabled {
-				background-color: var(--color-less);
-			}
 
 			&:hover {
 				background-color: transparent;
