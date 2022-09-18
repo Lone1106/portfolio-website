@@ -23,13 +23,14 @@ sliderLabels.forEach((label) => {
 
 // AUTO NAV PROJECTS
 let counter = 1;
+const swapTime = 10000;
 setInterval(() => {
 	document.getElementById("r" + counter).checked = true;
 	sliderLabels.forEach((item) => item.classList.remove("label-active"));
 	sliderLabels[counter - 1].classList.add("label-active");
 	counter++;
 	if (counter > 3) counter = 1;
-}, 10000);
+}, swapTime);
 
 // REVEAL SECTIONS ON SCROLL
 function isVisible(element) {
