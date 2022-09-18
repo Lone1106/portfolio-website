@@ -6,9 +6,10 @@
 	height: 500px;
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 20rem;
 
 	@include m.respond(big) {
-		width: 1600px;
+		width: 1400px;
 		padding: 0;
 	}
 
@@ -19,6 +20,7 @@
 
 	@include m.respond(phone) {
 		height: 600px;
+		width: 300px;
 	}
 
 	&__text {
@@ -62,6 +64,7 @@
 			height: 100%;
 			display: flex;
 			transition: 1.5s;
+			opacity: 0;
 
 			@include m.respond(tab-port) {
 				flex-direction: column;
@@ -118,11 +121,72 @@
 	margin-left: 0;
 }
 
+#r1:checked ~ .s1 {
+	opacity: 1;
+}
+
 #r2:checked ~ .s1 {
 	margin-left: -33.34%;
+}
+
+#r2:checked ~ .s2 {
+	opacity: 1;
 }
 
 #r3:checked ~ .s1 {
 	margin-left: -66.68%;
 }
 
+#r3:checked ~ .s3 {
+	opacity: 1;
+}
+
+.aside {
+	width: 1100px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8rem;
+
+	@include m.respond(tab-port) {
+		flex-direction: column;
+		width: 500px;
+	}
+
+	@include m.respond(phone) {
+		width: 300px;
+	}
+
+	&__item {
+		width: 50%;
+		height: 100%;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+
+		@include m.respond(tab-port) {
+			width: 100%;
+		}
+
+		&--img {
+			width: 100%;
+			height: auto;
+		}
+
+		&--text {
+			font-size: 1.8rem;
+		}
+
+		&--top {
+			width: 100%;
+		}
+
+		&--bottom {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2rem;
+			background-color: var(--color-less);
+		}
+	}
+}
