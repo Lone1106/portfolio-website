@@ -3,6 +3,7 @@
 
 h1 {
 	font-size: 6rem;
+	position: relative;
 
 	@include m.respond(phone) {
 		font-size: 4rem;
