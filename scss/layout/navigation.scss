@@ -36,20 +36,6 @@
 		gap: 2rem;
 		text-align: center;
 
-		&--social:link,
-		&--social:visited {
-			color: var(--color-less);
-			transition: color 0.3s;
-		}
-
-		&--social:hover {
-			color: var(--color-main);
-		}
-
-		&--social:active {
-			color: var(--color-accent);
-		}
-
 		&--item {
 			width: 100px;
 			height: 32px;
@@ -99,6 +85,8 @@
 			text-decoration: none;
 			color: var(--color-less);
 			transition: 0.3s;
+			border-left: 2px solid var(--color-less);
+			padding-left: 1rem;
 		}
 
 		&--lan:hover {
@@ -219,12 +207,9 @@
 			font-size: 1.8rem;
 		}
 
-		&--social {
-			list-style: none;
+		&--placeholder {
 			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			gap: 1.8rem;
+			height: 5px;
 		}
 	}
 

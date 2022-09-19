@@ -58,11 +58,3 @@ function scanDocument() {
 	});
 }
 document.addEventListener("scroll", throttle(scanDocument, 500));
-
-// RESET FORM
-const form = document.querySelector(".contact__main--form");
-form.addEventListener("submit", () => {
-	setTimeout(() => {
-		form.reset();
-	}, 5000);
-});

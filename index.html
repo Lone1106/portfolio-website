@@ -45,30 +45,6 @@
 							<a class="navigation__list--link" href="#contact">Kontakt</a>
 						</li>
 						<li>
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://www.linkedin.com/in/janrei1106/"
-								><i class="fa-xl fa-brands fa-linkedin"></i
-							></a>
-						</li>
-						<li class="navigation__list--icon">
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://github.com/Lone1106"
-								><i class="fa-xl fa-brands fa-square-github"></i
-							></a>
-						</li>
-						<li class="navigation__list--icon">
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://codepen.io/Lone1106"
-								><i class="fa-xl fa-brands fa-codepen"></i
-							></a>
-						</li>
-						<li>
 							<a class="navigation__list--lan" href="#">EN</a>
 						</li>
 					</ul>
@@ -95,33 +71,7 @@
 							<a class="navigation__list--link" href="#contact">Kontakt</a>
 						</li>
 					</ul>
-
-					<ul class="nav-mobile__container--social">
-						<li>
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://www.linkedin.com/in/janrei1106/"
-								><i class="fa-brands fa-linkedin fa-xl"></i
-							></a>
-						</li>
-						<li class="navigation__list--icon">
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://github.com/Lone1106"
-								><i class="fa-brands fa-square-github fa-xl"></i
-							></a>
-						</li>
-						<li class="navigation__list--icon">
-							<a
-								target="_blank"
-								class="navigation__list--social"
-								href="https://codepen.io/Lone1106"
-								><i class="fa-brands fa-codepen fa-xl"></i
-							></a>
-						</li>
-					</ul>
+					<div class="nav-mobile__container--placeholder"></div>
 				</div>
 			</nav>
 		</header>
@@ -448,49 +398,44 @@
 				</div>
 			</section>
 
-			<section id="contact" class="section-hidden">
+			<section id="contact" class="contact section-hidden">
 				<div class="container">
 					<div class="flexcontainer">
-						<figure class="contact__main">
-							<div class="contact__main--wrapper">
-								<h3>Kontakt</h3>
-								<form
-									class="contact__main--form"
-									method="POST"
-									action="https://formsubmit.co/el/loveri"
+						<figure class="contact__left">
+							<h3>Kontakt</h3>
+							<form class="contact__left--form" action="POST">
+								<label class="contact__left--label" for="email">Email</label>
+								<input
+									type="email"
+									name="email"
+									class="contact__left--inp"
+									id="email"
+									placeholder="Deine Emailadresse"
+									required
+								/>
+								<label class="contact__left--label" for="subject"
+									>Betreff</label
 								>
-									<input
-										class="contact__main--inp"
-										id="email"
-										type="email"
-										name="email"
-										placeholder="Email"
-										minlength="2"
-										required
-									/>
-									<input
-										class="contact__main--inp"
-										id="subject"
-										type="text"
-										name="_subject"
-										placeholder="Betreff"
-										minlength="2"
-										required
-									/>
-									<textarea
-										class="contact__main--area"
-										id="message"
-										name="message"
-										placeholder="Nachricht"
-										minlength="2"
-										required
-									></textarea>
-									<button class="contact__main--btn" type="submit">
-										Senden
-									</button>
-								</form>
-							</div>
+								<select class="contact__left--select" id="subject" required>
+									<option value="" disabled selected>Betreff auswählen</option>
+									<option value="Info">Info</option>
+									<option value="Kritik">Kritik</option>
+									<option value="Sonstiges">Sonstiges</option>
+								</select>
+								<label class="contact__left--label" for="message"
+									>Nachricht</label
+								>
+								<textarea
+									class="contact__left--area"
+									id="message"
+									placeholder="Deine Nachricht"
+									required
+								></textarea>
+								<button class="contact__left--btn" type="submit">Senden</button>
+							</form>
 						</figure>
+
+						<figure class="contact__right"></figure>
 					</div>
 				</div>
 			</section>
