@@ -12,7 +12,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="icon" type="image/x-icon" href="src/icon.png" />
@@ -362,7 +362,7 @@
 							</div>
 
 							<div class="aside__item--bottom">
-								<p class="aside__item--text">Neon Wallpaper</p>
+								<p class="aside__item--text">Type Logo</p>
 								<a
 									href="#"
 									class="button button-sm button-accent aside__item--mobbtn"
@@ -386,7 +386,7 @@
 							</div>
 
 							<div class="aside__item--bottom">
-								<p class="aside__item--text">Neon Wallpaper</p>
+								<p class="aside__item--text">Visitenkarte</p>
 								<a
 									href="#"
 									class="button button-sm button-accent aside__item--mobbtn"
@@ -401,41 +401,82 @@
 			<section id="contact" class="contact section-hidden">
 				<div class="container">
 					<div class="flexcontainer">
-						<figure class="contact__left">
-							<h3>Kontakt</h3>
-							<form class="contact__left--form" action="POST">
-								<label class="contact__left--label" for="email">Email</label>
-								<input
-									type="email"
-									name="email"
-									class="contact__left--inp"
-									id="email"
-									placeholder="Deine Emailadresse"
-									required
-								/>
-								<label class="contact__left--label" for="subject"
-									>Betreff</label
-								>
-								<select class="contact__left--select" id="subject" required>
-									<option value="" disabled selected>Betreff auswählen</option>
-									<option value="Info">Info</option>
-									<option value="Kritik">Kritik</option>
-									<option value="Sonstiges">Sonstiges</option>
-								</select>
-								<label class="contact__left--label" for="message"
-									>Nachricht</label
-								>
-								<textarea
-									class="contact__left--area"
-									id="message"
-									placeholder="Deine Nachricht"
-									required
-								></textarea>
-								<button class="contact__left--btn" type="submit">Senden</button>
-							</form>
-						</figure>
+						<div class="contact__wrapper">
+							<figure class="contact__left">
+								<h3>Kontakt</h3>
+								<form class="contact__left--form" action="POST">
+									<label class="contact__left--label" for="email">Email</label>
+									<input
+										type="email"
+										name="email"
+										class="contact__left--inp"
+										id="email"
+										placeholder="Deine Emailadresse"
+										required
+									/>
+									<label class="contact__left--label" for="subject"
+										>Betreff</label
+									>
+									<select class="contact__left--select" id="subject" required>
+										<option value="" disabled selected>
+											Betreff auswählen
+										</option>
+										<option value="Info">Info</option>
+										<option value="Kritik">Kritik</option>
+										<option value="Sonstiges">Sonstiges</option>
+									</select>
+									<label class="contact__left--label" for="message"
+										>Nachricht</label
+									>
+									<textarea
+										class="contact__left--area"
+										id="message"
+										placeholder="Deine Nachricht"
+										required
+									></textarea>
+									<button class="contact__left--btn" type="submit">
+										Senden
+									</button>
+								</form>
+							</figure>
 
-						<figure class="contact__right"></figure>
+							<figure class="contact__right">
+								<aside class="contact__right--container">
+									<a
+										href="https://github.com/Lone1106"
+										class="contact__right--link"
+										target="_blank"
+									>
+										<span
+											><i class="contact__right--icon fa-brands fa-github"></i
+										></span>
+										<span class="contact__right--text">Github</span>
+									</a>
+
+									<a
+										href="https://www.linkedin.com/in/janrei1106/"
+										class="contact__right--link"
+										target="_blank"
+									>
+										<span
+											><i class="contact__right--icon fa-brands fa-linkedin"></i
+										></span>
+										<span class="contact__right--text">LinkedIn</span>
+									</a>
+
+									<a
+										href="https://codepen.io/Lone1106"
+										class="contact__right--link"
+										target="_blank"
+									>
+										<span
+											><i class="contact__right--icon fa-brands fa-codepen"></i
+										></span>
+										<span class="contact__right--text">Codepen</span>
+									</a>
+								</aside>
+							</figure>
+						</div>
 					</div>
 				</div>
 			</section>

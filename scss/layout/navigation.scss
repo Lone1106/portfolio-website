@@ -90,11 +90,11 @@
 		}
 
 		&--lan:hover {
-			color: var(--color-main);
+			color: var(--color-accent);
 		}
 
 		&--lan:active {
-			color: var(--color-accent);
+			color: var(--color-active);
 		}
 	}
 }

@@ -2,14 +2,38 @@
 @use "../abstracts/mixins" as m;
 
 .contact {
-	height: 1000px;
+	height: 100%;
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+		@include m.respond(tab-port) {
+			flex-direction: column;
+			gap: 4rem;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
 
 	&__left {
-		width: 50%;
+		width: 70%;
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+
+		@include m.respond(tab-port) {
+			width: 100%;
+		}
 
 		&--form {
-			width: 70%;
+			width: 60%;
+
+			@include m.respond(tab-port) {
+				width: 100%;
+			}
 		}
 
 		&--label {
@@ -116,8 +140,60 @@
 	}
 
 	&__right {
-		width: 50%;
+		width: 30%;
 		height: 100%;
-		background-color: red;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include m.respond(tab-port) {
+			width: 100%;
+		}
+
+		&--container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 1.6rem;
+
+			@include m.respond(tab-port) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			@include m.respond(phone) {
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+
+		&--link:link,
+		&--link:visited {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1.8rem;
+			color: var(--color-less);
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+		&--link:hover {
+			color: var(--color-accent);
+		}
+
+		&--link:active {
+			color: var(--color-active);
+		}
+
+		&--icon {
+			font-size: 5rem;
+		}
+
+		&--text {
+			font-size: 1.8rem;
+		}
 	}
 }
