@@ -190,13 +190,14 @@
 		align-items: flex-start;
 		z-index: 9999;
 		transition: all 0.4s;
+		padding: 2.6rem 0;
 
 		&--list {
 			list-style: none;
 		}
 
 		&--item {
-			margin-bottom: 2rem;
+			margin-bottom: 4.6rem;
 			font-size: 1.8rem;
 		}
 
@@ -214,12 +215,12 @@
 	}
 
 	&__backdrop {
-		width: 0;
+		width: 100%;
 		height: 100%;
 		position: fixed;
 		background-color: var(--color-main);
 		z-index: 9998;
-		opacity: 96%;
+		opacity: 0;
 		top: 0;
 		right: 0;
 		transition: all 0.2s;
@@ -230,7 +231,7 @@
 	}
 
 	&__checkbox:checked ~ &__backdrop {
-		width: 100%;
+		opacity: 96%;
 	}
 
 	&__checkbox:checked ~ &__container {
