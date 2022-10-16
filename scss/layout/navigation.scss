@@ -221,6 +221,7 @@
 		background-color: var(--color-main);
 		z-index: 9998;
 		opacity: 0;
+		visibility: hidden;
 		top: 0;
 		right: 0;
 		transition: all 0.2s;
@@ -232,6 +233,7 @@
 
 	&__checkbox:checked ~ &__backdrop {
 		opacity: 96%;
+		visibility: visible;
 	}
 
 	&__checkbox:checked ~ &__container {
