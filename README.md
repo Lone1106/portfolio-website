@@ -8,4 +8,4 @@ Sections:
 - Projects
 - Contact
 
-[Preview here](https://harmonious-platypus-6d8124.netlify.app/)
+[Preview here](https://wonderful-crepe-3883fd.netlify.app/)
